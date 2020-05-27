@@ -1,49 +1,51 @@
-<!doctype html>
-
-<html lang="en">
+<!DOCTYPE html>
+<!--
+ *  Copyright (c) 2015 The WebRTC project authors. All Rights Reserved.
+ *
+ *  Use of this source code is governed by a BSD-style license
+ *  that can be found in the LICENSE file in the root of the source
+ *  tree.
+-->
+<html>
 <head>
-  <meta charset="utf-8">
 
-  <title>InternetTV</title>
-  
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="description" content="WebRTC code samples">
+    <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1, maximum-scale=1">
+    <meta itemprop="description" content="Client-side WebRTC code samples">
+    <meta itemprop="image" content="../../../images/webrtc-icon-192x192.png">
+    <meta itemprop="name" content="WebRTC code samples">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta id="theme-color" name="theme-color" content="#ffffff">
 
-  <meta name="description" content="">
-  <meta name="author" content="Rawk">
-  <!-- <meta http-equiv="refresh" content="0;URL=http://google.com"/> -->
+    <base target="_blank">
 
+    <title>getUserMedia</title>
 
-  <link rel="stylesheet" href="css/tv.css">
-  <link rel="stylesheet" href="css/style.css">
-
-  <meta property="og:title" content="">
-<meta property="og:description" content="">
-<meta property="og:image" content="">
-<meta property="og:url" content="">
-
-<meta name="twitter:title" content="">
-<meta name="twitter:description" content="">
-<meta name="twitter:image" content="">
-<meta name="twitter:card" content="">
-
-
+    <link rel="icon" sizes="192x192" href="../../../images/webrtc-icon-192x192.png">
+    <link href="//fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="../../../css/main.css">
 
 </head>
 
 <body>
- 
-  <div class="w-screen h-full flex justify-center items-center p-4">
 
-    <video class="w-180 h-screen video"></video>
+<div id="container">
 
-  </div>
 
-<script src="./index.js"></script>
+    <video id="gum-local" autoplay playsinline></video>
+    <button id="showVideo">Open camera</button>
+
+    <div id="errorMsg"></div>
+
+    <p class="warning"><strong>Warning:</strong> if you're not using headphones, pressing play will cause feedback.</p>
+
+</div>
+
+<script src="https://webrtc.github.io/adapter/adapter-latest.js"></script>
+<script src="js/main.js"></script>
+
+<script src="../../../js/lib/ga.js"></script>
+
 </body>
 </html>
-
-<!-- Begin Mailchimp Signup Form -->
-
-
-
-

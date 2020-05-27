@@ -10,35 +10,50 @@
 <head>
 
     <meta charset="utf-8">
-    <meta name="description" content="WebRTC code samples">
+    <meta name="description" content="">
     <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1, maximum-scale=1">
-    <meta itemprop="description" content="Client-side WebRTC code samples">
-    <meta itemprop="image" content="../../../images/webrtc-icon-192x192.png">
-    <meta itemprop="name" content="WebRTC code samples">
+    <meta itemprop="description" content="">
+    <meta itemprop="image" content="">
+    <meta itemprop="name" content="">
     <meta name="mobile-web-app-capable" content="yes">
     <meta id="theme-color" name="theme-color" content="#ffffff">
 
     <base target="_blank">
 
-    <title>getUserMedia</title>
+    <title>Internet Tv</title>
 
     <link rel="icon" sizes="192x192" href="../../../images/webrtc-icon-192x192.png">
-    <link href="//fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="../../../css/main.css">
+
+    <link rel="stylesheet" href="./css/tv.css">
 
 </head>
 
 <body>
 
-<div id="container">
+<div class="w-screen h-screen flex justify-center items-center ">
 
 
-    <video id="gum-local" autoplay playsinline></video>
-    <button id="showVideo">Open camera</button>
+<div class="w-0 lg:absolute lg:w-screen lg:h-screen bg-black flex items-center justify-center text-white">Not availbile on desktop yet</div>
+<div class="max-w-lg lg:max-w-none lg:w-screen bg-black h-full flex items-center justify-center p-4 pb-48">
+
+
+    <div class="w-full h-full bg-white rounded-lg">
+
+        <video autoplay playsinline></video>
+
+ <button id="showVideo">Open camera</button>
 
     <div id="errorMsg"></div>
 
     <p class="warning"><strong>Warning:</strong> if you're not using headphones, pressing play will cause feedback.</p>
+    </div>
+
+    
+   
+</div>
+
+
+
 
 </div>
 
